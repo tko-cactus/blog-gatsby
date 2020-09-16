@@ -63,6 +63,7 @@ export const MobileMenu = styled.div`
 `;
 
 export const Brand = styled.div`
+  color: ${props => props.theme.color.black.regular}
   font-family: ${props => props.theme.font.primary};
   ${props => props.theme.font_size.large};
 `;
