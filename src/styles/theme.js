@@ -1,7 +1,7 @@
 const theme = {
   font: {
-    primary: `'Prata', serif`,
-    secondary: `'Average', serif`,
+    primary: `'Raleway', sans-serif`,
+    secondary: `'Comfortaa', serif`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',
@@ -20,7 +20,7 @@ const theme = {
       light: '#564F62',
       regular: '#FFFFFF',
     },
-    primary: '#960018',
+    primary: 'linear-gradient(45deg, #6CB8FF, #fff66c, #ffa36c)',
   },
   screen: {
     xs: '575px',

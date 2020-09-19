@@ -52,11 +52,20 @@ const Header = () => (
 );
 
 const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.primary};
+  // background-color: ${props => props.theme.color.primary};
+  background: liner-gradient(45deg, #6cb8ff, #fff66c, #ffa36c);
   padding-top: 96px;
+  animation: AnimationName 10s ease infinite;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;
+  }
+  
+  @keyframes AnimationName {
+    0% { background-color: #6CB8FF; }
+    33% { background-color: #FFF66C; }
+    66% { background-color: #FFA36C; }
+    100% { background-color: #6CB8FF; }
   }
 `;
 
