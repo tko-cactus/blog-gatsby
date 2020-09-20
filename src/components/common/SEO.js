@@ -2,13 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
+  description: "Tokio Yamaguchi's portfolio site.",
+  title: 'tok-io.com',
   url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  author: 'Tokio Yamaguchi',
+  keywords: ['gatsby', 'site'],
   img: '',
-  twitterId: '@ajayns_',
+  twitterId: '@tochopy_high',
   facebookId: '',
 };
 

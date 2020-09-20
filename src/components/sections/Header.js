@@ -10,12 +10,22 @@ const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_build: file(
+        art_head: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "rice" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1400) {
+            fluid(maxWidth: 1600) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+        art_month: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "September" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1600) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -27,20 +37,14 @@ const Header = () => (
         <Container>
           <Grid>
             <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
+              <Img fluid={data.art_head.childImageSharp.fluid} />
             </Art>
             <Text>
-              <h1>
-                Fast in
-                <br />
-                every way
-                <br />
-                that matters
-              </h1>
+              <h1>Welcome!</h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                <StyledExternalLink href="https://github.com/tko-cactus/blog-gatsby">
+                  My tech blog &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
             </Text>
@@ -52,7 +56,7 @@ const Header = () => (
 );
 
 const HeaderWrapper = styled.header`
-  // background-color: ${props => props.theme.color.primary};
+  /* background-color: ${props => props.theme.color.primary}; */
   background: liner-gradient(45deg, #6cb8ff, #fff66c, #ffa36c);
   padding-top: 96px;
   animation: AnimationName 10s ease infinite;

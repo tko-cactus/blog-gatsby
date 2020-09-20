@@ -20,7 +20,7 @@ const theme = {
       light: '#564F62',
       regular: '#FFFFFF',
     },
-    primary: 'linear-gradient(45deg, #6CB8FF, #fff66c, #ffa36c)',
+    primary: '#000000',
   },
   screen: {
     xs: '575px',
