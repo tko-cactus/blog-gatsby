@@ -12,6 +12,7 @@ import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
 import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
 import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
 import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
+import { isWhiteSpaceLike } from 'typescript';
 
 const LOGOS = [
   {
@@ -57,7 +58,7 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="brands">
         <StyledContainer>
           <div>
             <h1>Used by biggest in tech</h1>

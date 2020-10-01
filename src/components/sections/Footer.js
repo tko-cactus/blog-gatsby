@@ -53,6 +53,8 @@ const Footer = () => (
                 <ExternalLink href="https://twitter.com/Shishung1">
                   @Shishung1
                 </ExternalLink>
+                <br />
+                email: tokio.greenface@gmail.com
               </span>
             </Copyright>
             <SocialIcons>

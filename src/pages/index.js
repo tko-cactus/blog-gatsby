@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '@common/Layout';
 import Navbar from '@common/Navbar';
 
+import Works from '@sections/Works';
 import Header from '@sections/Header';
 import About from '@sections/About';
 import Brands from '@sections/Brands';
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Navbar />
     <Header />
     <About />
+    <Works />
     <Brands />
     <Team />
     <Faq />

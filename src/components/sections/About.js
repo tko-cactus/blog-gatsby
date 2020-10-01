@@ -11,7 +11,7 @@ const About = () => (
       query {
         art_fast: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
+          name: { eq: "dream" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -22,7 +22,7 @@ const About = () => (
 
         art_learn: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
+          name: { eq: "waza" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -33,7 +33,7 @@ const About = () => (
 
         art_ideas: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
+          name: { eq: "future" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -44,7 +44,7 @@ const About = () => (
 
         art_riceball: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "September" }
+          name: { eq: "me" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -67,6 +67,8 @@ const About = () => (
                 Gunma University (3rd)
                 <br />
                 Representative of IGGG
+                <br />
+                Rice farmer
               </p>
             </div>
             <Art>
@@ -79,13 +81,14 @@ const About = () => (
             </Art>
             <div>
               <h2>Motivation</h2>
-              <p>Make agriculture more simpler and fun！</p>
+              <p>
+                Make agriculture more easier and attractive
+                <br />
+                with Computer Science!
+              </p>
             </div>
           </Grid>
-          <Grid inverse>
-            <Art>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
-            </Art>
+          <Grid>
             <div>
               <h2>Technology</h2>
               <p>
@@ -93,20 +96,8 @@ const About = () => (
                 <br />
               </p>
             </div>
-          </Grid>
-          <Grid>
-            <div>
-              <h2>Future</h2>
-              <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
-                <br />
-                <br />
-                Gatsby is fast in every way that matters.
-              </p>
-            </div>
             <Art>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
+              <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
           </Grid>
         </Container>
